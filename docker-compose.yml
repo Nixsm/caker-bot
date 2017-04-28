@@ -1,0 +1,8 @@
+version: '2'
+services:
+  bot:
+    build: .
+    command: python welcome_bot.py
+    environment:
+      PYTHONUNBUFFERED: 1
+      SLACK_BOT_TOKEN: "YOUR_SLACK_BOT_TOKEN_GOES_HERE"
